@@ -1,0 +1,17 @@
+.form {
+    text-align: center;
+    padding: 10px 0;
+    background-color: darken($colour-background, 8%);
+    border-top: 2px solid darken($colour-background, 20%); /*dégradé*/
+    color: darken($colour-background, 75%);
+    &__input {
+        border: none;
+        background: none;
+        margin-left: 10px;
+        &::placeholder {
+            color: darken($colour-background, 75%);
+            opacity: 1;
+        }
+    }
+    
+}

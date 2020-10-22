@@ -1,3 +1,242 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style: none; }
+
+/*  Logo et titres: Shrikhand
+    Texte: Roboto 
+*/
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../font/Roboto-Regular.ttf"); }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em; }
+
+h1 {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 1.7em;
+  font-weight: normal; }
+
+h2 {
+  font-weight: normal; }
+
+.footer__logo {
+  font-family: 'Shrikhand', sans-serif; }
+
+.btn {
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 3px 3px #b4b4b4;
+  cursor: pointer;
+  margin: 20px 0; }
+
+.form {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #dedede;
+  border-top: 2px solid #bfbfbf;
+  /*d├®grad├®*/
+  color: #333333; }
+  .form__input {
+    border: none;
+    background: none;
+    margin-left: 10px; }
+    .form__input::placeholder {
+      color: #333333;
+      opacity: 1; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 10px 20px; }
+  .header__logo {
+    width: 50%; }
+
+.container {
+  padding: 20px; }
+
+.main-container {
+  padding: 40px 20px; }
+
+.menu {
+  background-color: #F2F2F2;
+  border-radius: 40px 40px 0 0; }
+  .menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .menu__header__icon {
+      font-size: 1.5em;
+      margin-right: 10px; }
+  .menu__titre {
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  .menu__plat {
+    background: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+    .menu__plat__nom {
+      font-weight: bold; }
+    .menu__plat__prix {
+      align-self: flex-end;
+      font-weight: bold;
+      color: #535353; }
+
+footer * {
+  color: #FFF; }
+
+.footer {
+  background-color: #333333; }
+  .footer__logo {
+    padding-bottom: 10px;
+    font-size: 1.1em; }
+  .footer__list {
+    margin: 5px 0; }
+    .footer__list__icon {
+      margin-right: 10px; }
+      .footer__list__icon__2 {
+        font-size: 0.65em; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #F2F2F2; }
+  .main__title {
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 10px; }
+
+.fonctionnement__title {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 20px; }
+.fonctionnement__list {
+  display: flex;
+  padding: 25px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px #d9d9d9;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; }
+  .fonctionnement__list__nb {
+    background-color: #9356DC;
+    color: #FFF;
+    font-size: 0.9em;
+    border-radius: 10px;
+    padding: 2px 6px;
+    position: absolute;
+    left: -10px; }
+  .fonctionnement__list__icon {
+    margin: 0 20px 0 5px;
+    color: #737373;
+    font-size: 1.2em; }
+  .fonctionnement__list:hover::after {
+    opacity: 1; }
+  .fonctionnement__list::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f2eafb;
+    border-radius: 20px;
+    opacity: 0;
+    z-index: -1; }
+
+.restaurant {
+  background: #F2F2F2; }
+  .restaurant__title {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 15px; }
+  .restaurant__prev {
+    margin-bottom: 20px;
+    box-shadow: 0 3px 3px #e5e5e5; }
+    .restaurant__prev__img {
+      border-radius: 10px 10px 0 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: baseline; }
+      .restaurant__prev__img__palette {
+        height: 150px;
+        background: url("../../img/restaurants/palette_gout.jpg") center;
+        background-size: cover; }
+      .restaurant__prev__img__note {
+        height: 150px;
+        background: url("../../img/restaurants/note_enchantee.jpg") center;
+        background-size: cover; }
+      .restaurant__prev__img__francaise {
+        height: 150px;
+        background: url("../../img/restaurants/francaise.jpg") center;
+        background-size: cover; }
+      .restaurant__prev__img__delice {
+        height: 150px;
+        background: url("../../img/restaurants/delice_sens.jpg") center;
+        background-size: cover; }
+      .restaurant__prev__img__tag {
+        background-color: #99E2D0;
+        padding: 6px 10px;
+        color: #278870;
+        font-weight: bold;
+        font-size: 0.9em;
+        border-radius: 2px;
+        margin: 10px; }
+    .restaurant__prev__detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FFF;
+      border-radius: 0 0 10px 10px;
+      padding: 12px; }
+      .restaurant__prev__detail__icon {
+        font-size: 1.5em;
+        margin-right: 10px; }
+      .restaurant__prev__detail__nom {
+        font-weight: bold; }
+
+.menu__img__francaise {
+  height: 250px;
+  background: url("../../img/restaurants/francaise.jpg") center;
+  background-size: cover; }
+
+.menu__img__note {
+  height: 250px;
+  background: url("../../img/restaurants/note_enchantee.jpg") center;
+  background-size: cover; }
+
+.menu__img__palette {
+  height: 250px;
+  background: url("../../img/restaurants/palette_gout.jpg") center;
+  background-size: cover; }
+
+.menu__img__delice {
+  height: 250px;
+  background: url("../../img/restaurants/delice_sens.jpg") center;
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

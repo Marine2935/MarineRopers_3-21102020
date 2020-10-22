@@ -1,0 +1,28 @@
+.menu {
+    background-color: $colour-background;
+    border-radius: 40px 40px 0 0;
+    &__header {
+        @include heart-align;
+    }
+    &__titre {
+        font-size: 0.9em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &__plat {
+        background: $colour-back;
+        border-radius: 10px;
+        padding: $plat-padding;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        &__nom {
+            font-weight: bold;
+        }
+        &__prix {
+            align-self: flex-end;
+            font-weight: bold;
+            color: $colour-price;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+footer *{    
+    color: $colour-back;
+}
+
+.footer {
+    background-color: $colour-footer;
+    &__logo {
+        padding-bottom: 10px;
+        font-size: 1.1em;
+    }
+    &__list{
+        margin: 5px 0;    
+        &__icon {
+            margin-right: 10px;
+            &__2 {
+                font-size: 0.65em;
+            }
+        }
+    }
+}
