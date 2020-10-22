@@ -5,6 +5,8 @@ $colour-price: #535353;
 $colour-background: #F2F2F2;
 $colour-footer: #333333;
 $colour-back: #FFF;
+$colour-button: linear-gradient($colour-secondary, $colour-primary);
+$colour-heart: linear-gradient($colour-primary, $colour-secondary);
 
 $header-padding: 20px 20px 10px 20px;
 $layout-padding: 20px;
@@ -15,3 +17,5 @@ $main-title-size: 1.3em;
 
 $prev-height: 150px;
 $img-back_height: 250px;
+
+$box-shadow: 0 3px 3px darken($colour-background, 5%);

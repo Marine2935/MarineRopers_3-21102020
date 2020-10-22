@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@keyframes heart-filling {
+  0% {
+    transform: scaleY(0); }
+  100% {
+    transform: scaleY(1); } }
+@keyframes menu__plat {
+  0% {
+    transform: translateY(20%);
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes menu__check {
+  0% {
+    transform: translateX(100%); } }
+@keyframes menu__check__icon {
+  0% {
+    transform: rotate(-360deg); } }
+@keyframes menu__prix {
+  100% {
+    transform: translateX(-500%); } }
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +63,9 @@ h2 {
   cursor: pointer;
   margin: 20px 0; }
 
+.fa-heart {
+  font-size: 1.5em; }
+
 .form {
   text-align: center;
   padding: 10px 0;
@@ -80,25 +103,66 @@ h2 {
     justify-content: space-between;
     align-items: center; }
     .menu__header__icon {
-      font-size: 1.5em;
       margin-right: 10px; }
   .menu__titre {
-    font-size: 0.9em;
+    font-size: 1em;
     margin-top: 20px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column; }
+    .menu__titre::after {
+      content: "";
+      width: 40px;
+      height: 3px;
+      margin-top: 5px;
+      background-color: #99E2D0; }
   .menu__plat {
     background: #FFF;
     border-radius: 10px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    box-shadow: 0 3px 3px #e5e5e5;
+    position: relative;
+    overflow: hidden;
+    animation: menu__plat 500ms ease-in-out both; }
     .menu__plat__nom {
       font-weight: bold; }
     .menu__plat__prix {
       align-self: flex-end;
       font-weight: bold;
       color: #535353; }
+    .menu__plat--2 {
+      animation-delay: 300ms; }
+    .menu__plat--3 {
+      animation-delay: 600ms; }
+    .menu__plat--4 {
+      animation-delay: 900ms; }
+    .menu__plat__icon {
+      opacity: 0;
+      position: absolute;
+      width: 15%;
+      height: 100%;
+      right: 0;
+      margin: -10px;
+      color: #FFF;
+      background-color: #85dcc7;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .menu__plat__icon__img {
+        opacity: 0;
+        font-size: 1.2em; }
+    .menu__plat:hover .menu__plat__prix {
+      animation: menu__prix 1s both; }
+    .menu__plat:hover .menu__plat__icon {
+      opacity: 1;
+      animation: menu__check 1s both; }
+      .menu__plat:hover .menu__plat__icon__img {
+        opacity: 1;
+        animation: menu__check__icon 1000ms ease-in-out both; }
 
 footer * {
   color: #FFF; }
@@ -156,6 +220,8 @@ footer * {
     font-size: 1.2em; }
   .fonctionnement__list:hover::after {
     opacity: 1; }
+  .fonctionnement__list:hover .fonctionnement__list__icon {
+    color: #9356DC; }
   .fonctionnement__list::after {
     content: "";
     position: absolute;
@@ -214,7 +280,6 @@ footer * {
       border-radius: 0 0 10px 10px;
       padding: 12px; }
       .restaurant__prev__detail__icon {
-        font-size: 1.5em;
         margin-right: 10px; }
       .restaurant__prev__detail__nom {
         font-weight: bold; }

@@ -46,7 +46,10 @@
         &:hover {
             &::after {
                 opacity: 1;
-            }           
+            }   
+            .fonctionnement__list__icon {
+                color: $colour-primary;
+            }       
         }
         &::after {
             content:"";
@@ -72,7 +75,7 @@
     } 
     &__prev {
         margin-bottom: 20px;
-        box-shadow: 0 3px 3px darken($colour-background, 5%);
+        box-shadow: $box-shadow;
         &__img {
             border-radius: 10px 10px 0 0;
             display: flex;
