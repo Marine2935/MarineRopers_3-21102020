@@ -1,3 +1,5 @@
 .img_delice {
     @include img-background($img-back-height,'../img/restaurants/delice_sens.jpg');
+        max-width: 600px;
+        margin: auto;
 }

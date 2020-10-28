@@ -1,3 +1,5 @@
 .img_palette {
     @include img-background($img-back-height,'../img/restaurants/palette_gout.jpg');
+        max-width: 600px;
+        margin: auto;
 }

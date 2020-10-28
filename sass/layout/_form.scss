@@ -8,10 +8,10 @@
         border: none;
         background: none;
         margin-left: 10px;
+        width: 110px;
         &::placeholder {
             color: darken($colour-background, 75%);
             opacity: 1;
         }
-    }
-    
+    }    
 }

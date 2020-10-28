@@ -20,6 +20,13 @@
     margin-bottom: 20px;
 }
 
+.bloc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .list {
     display: flex;
     padding: 25px;
@@ -116,4 +123,33 @@
             width: 100%;
         }
     }    
+}
+
+@media all and (min-width: 540px) {
+    .bloc {
+        flex-direction: row;       
+    }
+
+    .list {
+        width: 48%;        
+        padding-right: 0;
+        &__3{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .preview {
+        width: 45%;
+    }
+}
+
+@media all and (min-width: 810px) {
+    .list {
+        width: 31%; 
+        &__3 {
+            margin-left: unset;
+            margin-right: unset;
+        }
+    }
 }

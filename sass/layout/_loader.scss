@@ -17,6 +17,7 @@
         font-size: 2.1em;
         position: fixed; 
         display: flex;  
+        top: 37%;
     }
     div:nth-child(1) {
         animation: logo_load $load-duration both;
@@ -53,13 +54,13 @@
     &__spinner {
         align-self: center;
         display: flex;
-        justify-content: space-around;
-        position: fixed; 
-        width: 30%;                
+        justify-content: center;
+        position: fixed;               
         div {
             width: 15px;
             height: 15px;
             border-radius: 50%;
+            margin: 0 15px;
             background-color: $colour-tertiary;
             &:nth-child(1) {
                 animation: spinner 800ms ease-in-out both infinite;
@@ -80,5 +81,6 @@
 }
 
 .after_load {
-    animation: after_load 3s ease-in-out;
+    position: relative;
+    animation: after_load 3300ms ease-in-out;
 }

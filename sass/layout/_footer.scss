@@ -1,21 +1,46 @@
 footer *{    
-    color: $colour-back;
+    color: $colour-back;    
 }
 
-.footer {
+footer {
     background-color: $colour-footer;
-    &__logo {
-        padding-bottom: 10px;
-        font-family: 'Shrikhand', sans-serif;
-        font-size: 1.1em;
-    }
-    &__list{
-        margin: 5px 0;    
-        &__icon {
-            margin-right: 10px;
-            &__2 {
-                font-size: 0.65em;
-            }
+}
+
+.footer_logo {
+    padding-bottom: 10px;
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.1em;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-list{
+    margin: 5px 0;    
+    &__icon {
+        margin-right: 10px;
+        &__2 {
+            font-size: 0.65em;
         }
+    }
+}
+
+
+@media all and (min-width: 540px) {
+    footer ul {
+        flex-direction: row;
+    }
+    .footer-list {
+        width: 45%;
+    }
+}
+
+@media all and (min-width: 810px) {
+    .footer-list {
+        width: unset;
     }
 }

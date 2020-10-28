@@ -1,3 +1,5 @@
 .img_note {
     @include img-background($img-back-height,'../img/restaurants/note_enchantee.jpg');
+        max-width: 600px;
+        margin: auto;
 }
