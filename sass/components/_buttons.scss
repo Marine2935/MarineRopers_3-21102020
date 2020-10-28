@@ -1,4 +1,17 @@
 .btn {
-    @include btn;
-    margin: 20px 0;    
+    color: $colour-back;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    box-shadow: 0 3px 3px rgb(180, 180, 180);
+    cursor: pointer;
+    margin: 20px 0;
+    align-self: center;
+
+    &:hover {      
+        background: linear-gradient(lighten($colour-secondary, 5), lighten($colour-primary, 5));
+        box-shadow: 0 3px 3px darken(rgb(180, 180, 180), 20);
+    }  
 }

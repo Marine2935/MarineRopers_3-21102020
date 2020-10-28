@@ -1,9 +1,8 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/keyframes";
+@import "./utils/animations";
 
-@import "./base/base";
+@import "./base/reset";
 @import "./base/typography";
 
 @import "./components/buttons";
@@ -14,9 +13,29 @@
 @import "./layout/container";
 @import "./layout/menu";
 @import "./layout/footer";
+@import "./layout/loader";
 
 @import "./pages/index";
 @import "./pages/francaise";
 @import "./pages/note_enchantee";
 @import "./pages/palette_gout";
 @import "./pages/delice_sens";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+h1 {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.nom {
+    font-weight: bold;
+}

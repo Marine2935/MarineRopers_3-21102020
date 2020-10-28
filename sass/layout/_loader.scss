@@ -1,0 +1,84 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    background-color: $colour-back; 
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: loader 2800ms ease-in-out;
+    opacity: 0;
+
+    &__logo {     
+        font-family: 'Shrikhand', sans-serif;
+        margin-top: 12px;
+        font-size: 2.1em;
+        position: fixed; 
+        display: flex;  
+    }
+    div:nth-child(1) {
+        animation: logo_load $load-duration both;
+    }
+    div:nth-child(2) {
+        animation: logo_load $load-duration both;
+        animation-delay: 200ms;
+    }
+    div:nth-child(3) {
+        animation: logo_load $load-duration both;
+        animation-delay: 500ms;
+    }
+    div:nth-child(4) {
+        animation: logo_load $load-duration both;
+        animation-delay: 800ms;
+    }
+    div:nth-child(5) {
+        animation: logo_load $load-duration both;
+        animation-delay: 1400ms;
+    }
+    div:nth-child(6) {
+        animation: logo_load $load-duration both;
+        animation-delay: 1800ms;
+    }
+    div:nth-child(7) {
+        animation: logo_load $load-duration both;
+        animation-delay: 2000ms;
+    }
+    div:nth-child(8) {
+        animation: logo_load $load-duration both;
+        animation-delay: 2200ms;
+    }
+
+    &__spinner {
+        align-self: center;
+        display: flex;
+        justify-content: space-around;
+        position: fixed; 
+        width: 30%;                
+        div {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $colour-tertiary;
+            &:nth-child(1) {
+                animation: spinner 800ms ease-in-out both infinite;
+                animation-direction: alternate;
+            }
+            &:nth-child(2) {
+                animation: spinner 800ms ease-in-out both infinite;
+                animation-direction: alternate;
+                animation-delay: 500ms;
+            }
+            &:nth-child(3) {
+                animation: spinner 800ms ease-in-out both infinite;
+                animation-direction: alternate;
+                animation-delay: 1000ms;
+            }
+        }
+    }
+}
+
+.after_load {
+    animation: after_load 3s ease-in-out;
+}

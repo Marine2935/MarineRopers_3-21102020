@@ -1,83 +1,98 @@
-.menu {
+.page {
+    z-index: 1;
+    position: relative;
+    top: -$menu_radius;
     background-color: $colour-background;
-    border-radius: 40px 40px 0 0;
-    &__header {
-        @include heart-align;
-    }
-    &__titre {
-        font-size: 1em;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-        display: flex;
-        flex-direction: column;
-        &::after {
-            content: "";
-            width: 40px;
-            height: 3px;
-            margin-top: 5px;
-            background-color: $colour-tertiary;
-        }
-    }
-    &__plat {
-        background: $colour-back;
-        border-radius: 10px;
-        padding: $plat-padding;
+    border-radius: $menu_radius $menu_radius 0 0;
+    margin-bottom: -$menu_radius;
+    &__title {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
-        box-shadow: $box-shadow;
-        position: relative;
-        overflow: hidden;
-        animation: menu__plat 500ms ease-in-out both;
-        &__nom {
-            font-weight: bold;
-        }
-        &__prix {
-            align-self: flex-end;
-            font-weight: bold;
-            color: $colour-price;
-        }
-        &--2 {
-            animation-delay: 300ms;
-        }
-        &--3 {
-            animation-delay: 600ms;
-        }
+        align-items: center;
+    }
+    &__icon {
+        margin-right: 15px;
+    }
+}
 
-        &--4 {
-            animation-delay: 900ms;
-        }
-        &__icon {
+.menu_title {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    &::after {
+        content: "";
+        width: 40px;
+        height: 3px;
+        margin-top: 5px;
+        background-color: $colour-tertiary;
+    }
+}
+
+.plat {
+    background: $colour-back;
+    border-radius: 10px;
+    padding: $plat-padding;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    box-shadow: $box-shadow;
+    position: relative;
+    overflow: hidden;
+    animation: menu__plat 500ms ease-in-out both;
+    &__prix {
+        align-self: flex-end;
+        font-weight: bold;
+        color: $colour-price;
+    }
+    &--2 {
+        animation-delay: 300ms;
+    }
+    &--3 {
+        animation-delay: 600ms;
+    }
+
+    &--4 {
+        animation-delay: 900ms;
+    }
+    &__icon {
+        opacity: 0;
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        right: 0;
+        margin: -$plat-padding;
+        color: $colour-back;
+        background-color: darken($colour-tertiary, 5%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__img {
             opacity: 0;
-            position: absolute;
-            width: 15%;
-            height: 100%;
-            right: 0;
-            margin: -$plat-padding;
-            color: $colour-back;
-            background-color: darken($colour-tertiary, 5%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            &__img {
-                opacity: 0;
-                font-size: 1.2em;                               
-            }      
-        }
+            font-size: 1.2em;                               
+        }      
+    }
 
-        &:hover {
-            .menu__plat__prix {
-                animation: menu__prix 1s both;
-            }
-            .menu__plat__icon {   
+    &:hover {
+        .plat__prix {
+            animation: menu__prix 1s both;
+        }
+        .plat__icon {   
+            opacity: 1;
+            animation: menu__check 1s both;
+            &__img {
                 opacity: 1;
-                animation: menu__check 1s both;
-                &__img {
-                    opacity: 1;
-                    animation: menu__check__icon 1000ms ease-in-out both; 
-                }
-            }            
-        }   
+                animation: menu__check__icon 1000ms ease-in-out both; 
+            }
+        }            
+    }   
+}
+
+.order {
+    text-align: center;
+    &__btn {
+        width: 50%;
     }
 }

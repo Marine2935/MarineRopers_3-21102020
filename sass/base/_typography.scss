@@ -1,26 +1,6 @@
-/*  Logo et titres: Shrikhand
-    Texte: Roboto 
-*/
 @font-face {
     font-family: 'Roboto';
-    src: url('../../font/Roboto-Regular.ttf')
+    src: url('../font/Roboto-Regular.ttf')
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9em;
-}
 
-h1 {
-    font-family: 'Shrikhand', sans-serif;
-    font-size: 1.7em;
-    font-weight: normal;
-}
-
-h2 {
-    font-weight: normal;
-}
-
-.footer__logo {
-    font-family: 'Shrikhand', sans-serif;
-}

@@ -1,26 +1,6 @@
-
-@mixin img-background($height-img, $url-img) {
-    height: $height-img;
-    background: url($url-img) center;
+@mixin img-background($height, $url) {
+    height: $height;
+    background: url($url) center;
     background-size: cover;
 }
 
-@mixin heart-align {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__icon {
-        margin-right: 10px;
-    }
-}
-
-@mixin btn {
-    color: #fff;
-    font-weight: bold;
-    padding: 12px 20px;
-    border-radius: 30px;
-    border: none;
-    background: $colour-button;
-    box-shadow: 0 3px 3px rgb(180, 180, 180);
-    cursor: pointer;
-}

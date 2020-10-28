@@ -1,9 +1,12 @@
 .header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: $header-padding;
+    padding: 20px 20px 10px 20px;
+    &__icon {
+        font-size: 1.4em;
+    }
     &__logo {
         width: 50%;
+        margin: auto;
     }
 }
