@@ -9,7 +9,7 @@
     }
 }
 
-@keyframes logo_load {
+@keyframes logo-load {
     0% {
         transform: translateY(-20%);
         opacity: 0;
@@ -28,7 +28,7 @@
     }
 }
 
-@keyframes after_load {
+@keyframes after-load {
     0% {
         transform: translateX(-9999px);
     }
@@ -37,7 +37,7 @@
     }
 }
 
-@keyframes heart-op {
+@keyframes heart-vanish {
     0% {
         transform: scale(1);
         z-index: 1;
@@ -60,7 +60,7 @@
     }
 }
 
-@keyframes menu__plat {
+@keyframes check {
     0% {
         transform: translateY(20%);
         opacity: 0;
@@ -70,20 +70,20 @@
     }
 }
 
-@keyframes menu__check {
+@keyframes icon-shift {
     0% {
-        transform: translateX(100%);
+        transform: translateX(70px);
     }
 }
 
-@keyframes menu__check__icon {
+@keyframes icon-rotate {
     0% {
         transform: rotate(-360deg);
     }
 }
 
-@keyframes menu__prix {
+@keyframes price-shift {
     100% {
-        transform: translateX(-500%);
+        transform: translateX(-60px);
     }
 }

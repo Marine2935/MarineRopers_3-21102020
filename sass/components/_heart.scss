@@ -2,12 +2,12 @@
     background: none;
     border: none;
     &:hover .heart_icon {
-        animation: heart-op 600ms ease-in-out both;
+        animation: heart-vanish 400ms ease-in-out both;
     }
     &:hover .heart_icon_hover {
         z-index: 1;
         opacity: 1;
-        animation: heart-filling 600ms ease-in-out;
+        animation: heart-filling 400ms ease-in-out;
     }
 }
 

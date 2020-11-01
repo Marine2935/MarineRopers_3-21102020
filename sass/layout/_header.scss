@@ -4,6 +4,10 @@
     max-width: 600px;
     margin: auto;
     padding: 20px 20px 10px 20px;
+    &__btn {
+        border: none;
+        background: none;
+    }
     &__icon {
         font-size: 1.4em;
     }

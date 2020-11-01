@@ -84,7 +84,7 @@
 
 .preview {
     margin-bottom: 20px;
-    box-shadow: $box-shadow;
+    box-shadow: 0 3px 3px darken($colour-background, 5%);
     &__img {
         border-radius: 10px 10px 0 0;
         display: flex;

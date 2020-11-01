@@ -39,29 +39,35 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    box-shadow: $box-shadow;
+    box-shadow: 0 3px 3px darken($colour-background, 5%);
     position: relative;
     overflow: hidden;
-    animation: menu__plat 500ms ease-in-out both;
+    animation: check 300ms ease-in-out both;
+    &__desc {
+        width: 90%;
+        white-space: nowrap;
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
     &__prix {
         align-self: flex-end;
         font-weight: bold;
-        color: $colour-price;
     }
-    &--2 {
-        animation-delay: 300ms;
+    &--delay_1 {
+        animation-delay: 200ms;
     }
-    &--3 {
+    &--delay_2 {
+        animation-delay: 400ms;
+    }
+    &--delay_3 {
         animation-delay: 600ms;
-    }
-
-    &--4 {
-        animation-delay: 900ms;
     }
     &__icon {
         opacity: 0;
         position: absolute;
-        width: 15%;
+        width: 70px;
         height: 100%;
         right: 0;
         margin: -$plat-padding;
@@ -72,20 +78,29 @@
         align-items: center;
         &__img {
             opacity: 0;
-            font-size: 1.2em;                               
+            font-size: 1.5em;         
+            margin-right: 10px;                      
         }      
     }
-
     &:hover {
+        .plat__desc {
+           width: 72%;
+           @media all and (max-width: 380px) {
+               width: 65%;
+           }
+           @media all and (max-width: 320px) {
+               width: 50%;
+           }
+        }
         .plat__prix {
-            animation: menu__prix 1s both;
+            animation: price-shift 500ms both;        
         }
         .plat__icon {   
             opacity: 1;
-            animation: menu__check 1s both;
+            animation: icon-shift 500ms both;
             &__img {
                 opacity: 1;
-                animation: menu__check__icon 1000ms ease-in-out both; 
+                animation: icon-rotate 500ms ease-in-out both; 
             }
         }            
     }   
