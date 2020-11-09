@@ -3,23 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="img/fontawesome/css/all.css" />
-        <link rel ="stylesheet" href="css/style.css">
-        <title>Ohmyfood! - La note enchantée</title>
+        <link rel="stylesheet" href="../img/fontawesome/css/all.css" />
+        <link rel ="stylesheet" href="../css/style.css">
+        <title>Ohmyfood! - À la française</title>
     </head>
     <body>
         <header class="header">
-            <button class="header__btn">
-                <a href="index.html"><i class="fas fa-arrow-left header__icon"></i></a>
-            </button>
-            <img src="img/ohmyfood@2x.svg" alt="logo ohmyfood" class="header__logo" />
+            <a href="../index.html"><i class="fas fa-arrow-left header__icon"></i></a>
+            <img src="../img/ohmyfood@2x.svg" alt="logo ohmyfood" class="header__logo" />
         </header>
-        <div class="img_note">
-            <!--img en background-->
-        </div>
-        <div class="container page">
+        <div class="img_francaise"></div>
+        <div class="container page"> 
             <div class="page__title">
-                <h1>La note enchantée</h1>
+                <h1>À la française</h1>
                 <button class="page__icon heart_btn">
                     <i class="far fa-heart heart_icon"></i>
                     <i class="fas fa-heart heart_icon_hover"></i>
@@ -29,8 +25,8 @@
                 <h2 class="menu_title">ENTRÉES</h2>
                 <div class="plat">
                     <div  class="plat__desc">
-                        <p class="nom">Ravioles de foie gras</p>
-                        <p>Accompagnés de leur crème à la truffe</p>
+                        <p class="nom">Tartare de poulpe acidulé</p>
+                        <p class="accompagnement">Aux zestes d'orange</p>
                     </div>
                     <p class="plat__prix">25€</p>
                     <div class="plat__icon">
@@ -39,8 +35,8 @@
                 </div>
                 <div class="plat plat--delay_1">
                     <div  class="plat__desc">
-                        <p class="nom">Caviar osciètre</p>
-                        <p>Sur blini à la farine de blé noir</p>
+                        <p class="nom">Velouté de légumes d'antan</p>
+                        <p class="accompagnement">Carotte, panais, topinambour</p>
                     </div>
                     <p class="plat__prix">35€</p>
                     <div class="plat__icon">
@@ -48,21 +44,11 @@
                     </div>
                 </div>
                 <div class="plat plat--delay_2">
-                    <div  class="plat__desc">
-                        <p class="nom">Homard et espuma de potiron</p>
-                        <p>Mariné aux zestes d'orange</p>
+                    <div  class="plat__desc">                    
+                        <p class="nom">Soupe à l'oignon</p>
+                        <p class="accompagnement">Revisitée</p>
                     </div>
                     <p class="plat__prix">20€</p>
-                    <div class="plat__icon">
-                        <i class="fas fa-check-circle plat__icon__img"></i>
-                    </div>
-                </div>
-                <div class="plat plat--delay_3">
-                    <div  class="plat__desc">
-                        <p class="nom">Foie gras de canard cuit entier</p>
-                        <p>Confiture de figue et pain toasté</p>
-                    </div>
-                    <p class="plat__prix">35€</p>
                     <div class="plat__icon">
                         <i class="fas fa-check-circle plat__icon__img"></i>
                     </div>
@@ -72,8 +58,8 @@
                 <h2 class="menu_title">PLATS</h2>
                 <div class="plat">
                     <div  class="plat__desc">
-                        <p class="nom">Noix de coquilles Saint-Jacques</p>
-                        <p>Sur lit de purée de céleri-rave</p>
+                        <p class="nom">Coquilles Saint-Jacques</p>
+                        <p class="accompagnement">Accompagnées d'une purée de panais</p>
                     </div>
                     <p class="plat__prix">40€</p>
                     <div class="plat__icon">
@@ -82,8 +68,8 @@
                 </div>
                 <div class="plat plat--delay_1">
                     <div  class="plat__desc">
-                        <p class="nom">Langoustine poêlée</p>
-                        <p>Purée de patate douce</p>
+                        <p class="nom">Magret de canard</p>
+                        <p class="accompagnement">Et parmentier de pommes de terre</p>
                     </div>
                     <p class="plat__prix">35€</p>
                     <div class="plat__icon">
@@ -92,8 +78,8 @@
                 </div>
                 <div class="plat plat--delay_2">
                     <div  class="plat__desc">
-                        <p class="nom">Mijoté de queue de boeuf</p>
-                        <p>Et riz sauvage aux zestes de citron</p>
+                        <p class="nom">Pigeonneau d’Ille-et-Vilaine</p>
+                        <p class="accompagnement">Sur son lit de gnocchis aux légumes</p>
                     </div>
                     <p class="plat__prix">44€</p>
                     <div class="plat__icon">
@@ -105,8 +91,8 @@
                 <h2 class="menu_title">DESSERTS</h2>
                 <div class="plat">
                     <div  class="plat__desc">
-                        <p class="nom">Macaron noisette et chocolat</p>
-                        <p>Glace au caramel brun et sel de Guérande</p>
+                        <p class="nom">Pétales de violettes glacés</p>
+                        <p class="accompagnement">Et purée de noisettes</p>
                     </div>
                     <p class="plat__prix">18€</p>
                     <div class="plat__icon">
@@ -115,8 +101,8 @@
                 </div>
                 <div class="plat plat--delay_1">
                     <div  class="plat__desc">
-                        <p class="nom">Baba au rhum revisité</p>
-                        <p>Avec son coulis de citron</p>
+                        <p class="nom">Fondant au chocolat</p>
+                        <p class="accompagnement">Revisité</p>
                     </div>
                     <p class="plat__prix">22€</p>
                     <div class="plat__icon">
@@ -125,8 +111,8 @@
                 </div>
                 <div class="plat plat--delay_2">
                     <div  class="plat__desc">
-                        <p class="nom">Tarte au citron meringuée</p>
-                        <p>Déstructurée</p>
+                        <p class="nom">Millefeuille croustillant</p>
+                        <p class="accompagnement">Myrtilles et pâte d’amande</p>
                     </div>
                     <p class="plat__prix">23€</p>
                     <div class="plat__icon">
@@ -137,7 +123,7 @@
             <div class="order">
                 <button class="btn order__btn" type="submit">Commander</button>
             </div>
-        </div>    
+        </div>
         <footer>
             <div class="container">
                 <h2 class="footer_logo">ohmyfood</h2>

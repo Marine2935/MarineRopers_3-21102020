@@ -4,10 +4,6 @@
     max-width: 600px;
     margin: auto;
     padding: 20px 20px 10px 20px;
-    &__btn {
-        border: none;
-        background: none;
-    }
     &__icon {
         font-size: 1.4em;
     }
@@ -17,7 +13,7 @@
     }
 }
 
-@media all and (min-width: 810px) {
+@media all and (min-width: $screen-desktop) {
     .header__logo {
         width: 280px;
     }

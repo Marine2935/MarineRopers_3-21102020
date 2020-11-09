@@ -43,6 +43,11 @@
     position: relative;
     overflow: hidden;
     animation: check 300ms ease-in-out both;
+    @for $i from 1 through 3 {
+        &--delay_#{$i} {
+            animation-delay: ($i * 200ms);
+        }
+    }
     &__desc {
         width: 90%;
         white-space: nowrap;
@@ -54,15 +59,6 @@
     &__prix {
         align-self: flex-end;
         font-weight: bold;
-    }
-    &--delay_1 {
-        animation-delay: 200ms;
-    }
-    &--delay_2 {
-        animation-delay: 400ms;
-    }
-    &--delay_3 {
-        animation-delay: 600ms;
     }
     &__icon {
         opacity: 0;
@@ -82,28 +78,34 @@
             margin-right: 10px;                      
         }      
     }
-    &:hover {
-        .plat__desc {
-           width: 72%;
-           @media all and (max-width: 380px) {
-               width: 65%;
-           }
-           @media all and (max-width: 320px) {
-               width: 50%;
-           }
+}
+
+.plat:hover {
+    .plat__desc {
+        width: 72%;
+        @media all and (max-width: 380px) {
+            width: 65%;
         }
-        .plat__prix {
-            animation: price-shift 500ms both;        
+        @media all and (max-width: 320px) {
+            width: 50%;
         }
-        .plat__icon {   
+    }
+    .plat__prix {
+        animation: price-shift 500ms both;        
+    }
+    .plat__icon {   
+        opacity: 1;
+        animation: icon-shift 500ms both;
+        &__img {
             opacity: 1;
-            animation: icon-shift 500ms both;
-            &__img {
-                opacity: 1;
-                animation: icon-rotate 500ms ease-in-out both; 
-            }
-        }            
-    }   
+            animation: icon-rotate 500ms ease-in-out both; 
+        }
+    }            
+}   
+
+.accompagnement {
+    font-size: 0.9em;
+    margin-top: 5px;
 }
 
 .order {

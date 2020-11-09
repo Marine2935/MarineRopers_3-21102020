@@ -29,8 +29,7 @@ footer ul {
     }
 }
 
-
-@media all and (min-width: 540px) {
+@media all and (min-width: $screen-tablet) {
     footer ul {
         flex-direction: row;
     }
@@ -39,7 +38,7 @@ footer ul {
     }
 }
 
-@media all and (min-width: 810px) {
+@media all and (min-width: $screen-desktop) {
     .footer-list {
         width: unset;
     }

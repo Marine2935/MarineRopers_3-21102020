@@ -1,6 +1,10 @@
 .heart_btn {
     background: none;
     border: none;
+    cursor: pointer;    
+    &:focus {
+        outline: none;
+    }
     &:hover .heart_icon {
         animation: heart-vanish 400ms ease-in-out both;
     }

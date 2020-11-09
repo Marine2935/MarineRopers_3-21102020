@@ -29,11 +29,11 @@
 }
 
 @keyframes after-load {
-    0% {
-        transform: translateX(-9999px);
+    0%, 95% {
+        opacity: 0;        
     }
     100% {
-        transform: translateX(0);
+        opacity: 1;
     }
 }
 

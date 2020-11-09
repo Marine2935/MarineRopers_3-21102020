@@ -12,6 +12,9 @@
             color: darken($colour-background, 75%);
             opacity: 1;
         }
+        &:focus {
+            background-color: #FFF;
+        }
     }    
 }
 
